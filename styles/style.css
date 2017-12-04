@@ -1,5 +1,5 @@
 html {
-  background-color: #E2A861;
+  background-color: #173E8E;
   font-size: 20px; /* px means 'pixels': the base font size is now 10 pixels high  */
   font-family: 'Rubik', sans-serif;
   font-family: 'Pacifico', cursive;
@@ -14,7 +14,7 @@ html {
 h1{
   margin: 0;
   padding: 20px 0;
-  color: #D23834;
+  color: #173E8E;
   text-shadow: 2px 2px 5px black;
   font-size: 60px;
   text-align: center;
@@ -24,6 +24,7 @@ p, li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 body {
@@ -37,4 +38,10 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  height: 400px;
 }
+
+/*button {
+  margin-left: auto;
+  margin-right: auto;
+}*/
