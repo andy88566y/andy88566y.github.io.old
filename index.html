@@ -6,152 +6,178 @@
     <title>Mozilla splash page</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
-      /* header and body setup */
+    /* header and body setup */
+    html
+    {
+    font-family: 'Open Sans', sans-serif;
+    background: url(pattern.png);
+    }
+    body {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 360px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    }
+    /* Header styling */
+    header {
+    height: 150px;
+    }
+    header img {
+    height: 100px;
+    position: absolute;
+    right: 32.5px;
+    top: 32.5px;
+    }
+    h1 {
+    font-size: 50px;
+    line-height: 140px;
+    margin: 0 0 0 32.5px;
+    }
+    /* main section and video styling */
+    main {
+    background: #ccc;
+    }
+    article {
+    padding: 20px;
+    }
+    h2 {
+    margin-top: 0;
+    }
+    p {
+    line-height: 2;
+    }
 
-      html {
-        font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
-      }
 
-      body {
-        width: 100%;
-        max-width: 1200px;
-        min-width: 360px;
-        margin: 0 auto;
-        background-color: white;
-        position: relative;
-      }
+    .block{
+      clear: left;
+      padding: 40px 0;
+      background: #c13832;
+      box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+      inset 0 -3px 2px rgba(0,0,0,0.5);
+    }
+    .block img{
+      float: right;
+      image-orientation: from-image;
+    }
+    .block h2{
+      text-align: center;
+    }
 
-      /* Header styling */
+    .block2{
+      clear: left;
+      padding: 40px 0;
+      background: #D0B4D3;
+      box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+      inset 0 -3px 2px rgba(0,0,0,0.5);
+    }
+    .block2 img{
+      float: right;
+      image-orientation: from-image;
+    }
+    .block2 h2{
+      text-align: center;
+    }
 
-      header {
-        height: 150px;
-      }
-
-      header img {
-        width: 100px;
-        position: absolute;
-        right: 32.5px;
-        top: 32.5px;
-      }
-
-      h1 {
-        font-size: 50px;
-        line-height: 140px;
-        margin: 0 0 0 32.5px;
-      }
-
-      /* main section and video styling */
-
-      main {
-        background: #ccc;
-      }
-
-      article {
-        padding: 20px;
-      }
-
-      h2 {
-        margin-top: 0;
-      }
-
-      p {
-        line-height: 2;
-      }
-
-      iframe {
-        float: left;
-        margin: 0 20px 20px 0;
-        max-width: 100%;
-      }
-
-      /* further info links */
-
-      .further-info {
-        clear: left;
-        padding: 40px 0;
-        background: #c13832;
-        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
-                    inset 0 -3px 2px rgba(0,0,0,0.5);
-      }
-
-      .further-info a {
-        width: 25%;
-        display: block;
-        float: left;
-      }
-
-      .further-info img {
-        max-width: 100%;
-      }
-
-      .clearfix {
-        clear: both;
-      }
-
-      /* Red panda image */
-
-      .red-panda img {
-        display: block;
-        max-width: 100%;
-      }
+    /*margin: 0 20px 20px 0;*/
+    /*max-width: 100%;*/
+    /* further info links */
+    .further-info {
+    clear: left;
+    padding: 40px 0;
+    background: #c13832;
+    box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+    inset 0 -3px 2px rgba(0,0,0,0.5);
+    }
+    .further-info a {
+      width: 25%;
+      display: block;
+      float: left;
+    }
+    .further-info img {
+      max-width: 100%;
+    }
+    .clearfix {
+      clear: both;
+    }
+    /* Red panda image */
+    .red-panda img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
     </style>
   </head>
   <body>
     <header>
-      <h1>Mozilla</h1>
+      <h1>Happy Birthday! Ingrid</h1>
       <!-- insert <img> element, link to the small
-          version of the Firefox logo -->
-      <img src="firefox_logo120.png">
-
+      version of the Firefox logo -->
+      <img src="images/roof.jpg">
     </header>
-
     <main>
-      <article>
-        <!-- insert iframe from youtube -->
 
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/ojcNcvb1olg" frameborder="0" allowfullscreen></iframe>
+      <div class="block">
+        <h2>湯晨</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/01湯.jpg" alt="" height="150">
+        <img src="images/03湯.jpg" alt="" width="200">
+        <img src="images/09湯.jpg" alt="" width="200">
+      </div>
 
-        <h2>Rocking the free web</h2>
+      <div class="block2">
+        <h2>卓芮</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/25卓芮.jpg" alt="" width="400">
+      </div>
 
-        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+      <div class="block">
+        <h2>靖文</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/12靖文.jpg" alt="" width="400">
+      </div>
 
-        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
-      </article>
+      <div class="block2">
+        <h2>吳映萱</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/25卓芮.jpg" alt="" width="400">
+      </div>
 
-      <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
-        <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox-logo400.png" alt="Download Firefox"
-               srcset="firefox_logo120.png 120w,
-                       firefox-addons400.jpg 400w"
-               sizes="(max-width: 480px) 120px,
-                      400px">
-        </a>
-        <a href="https://www.mozilla.org/">
-          <img src="mozilla-dinosaur400.png" alt="Learn more about Mozilla"
-               srcset="mozilla-dinosaur120.png 120w,
-                       mozilla-dinosaur400.png 400w"
-               sizes="(max-width: 480px) 120px,
-                      400px">
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img src="firefox-addons400.jpg" alt="Customize Firefox with add-ons"
-               srcset="firefox-addons120.jpg 120w,
-                       firefox-addons400.jpg 400w"
-               sizes="(max-width: 480px) 120px,
-                      400px">
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg" alt="Learn web development with MDN">
-        </a>
-        <div class="clearfix"></div>
+      <div class="block">
+        <h2>乓乓</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/12靖文.jpg" alt="" width="400">
+      </div>
+
+      <div class="block2">
+        <h2>陳怡卉</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/25卓芮.jpg" alt="" width="400">
+      </div>
+
+      <div class="block">
+        <h2>曾暄儒</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/12靖文.jpg" alt="" width="400">
+      </div>
+
+      <div class="block2">
+        <h2>許瑋庭</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/25卓芮.jpg" alt="" width="400">
+      </div>
+
+      <div class="block">
+        <h2>許芳</h2>
+        <iframe  align="center" width="400" align="center" height="300" src="https://www.youtube.com/embed/0W4WI8YNvOM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <img src="images/12靖文.jpg" alt="" width="400">
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
+        <img src="images/end.jpg" align="middle" alt="a red panda">
       </div>
-
     </main>
   </body>
 </html>
